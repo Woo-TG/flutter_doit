@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "354977064960",
+    "project_id": "tg-doit-flutter-v1",
+    "storage_bucket": "tg-doit-flutter-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354977064960:android:7f5ab5e782f71e575790e5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_ssamz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA1osj7BsGFgR6LTtTTqJX7ds7lDRZLXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
