@@ -23,24 +23,26 @@ class MyApp extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.italic,
-                color: Colors.white,
+                color: Colors.red,
                 fontSize: 20,
                 height: 1.5,
                 backgroundColor: Colors.yellow,
                 decoration: TextDecoration.underline,
                 decorationColor: Colors.red,
                 decorationStyle: TextDecorationStyle.wavy,
-                letterSpacing: 20
+                letterSpacing: 10
               ),
             ),
+            SizedBox(height: 10,),
             Text(
               longText,
               style: const TextStyle(
                 fontSize: 20
               ),
               maxLines: 2,
-                overflow: TextOverflow.visible,
+                overflow: TextOverflow.fade,
             ),
+            SizedBox(height: 10,),
             RichText(
               text: const TextSpan(
                 text: 'HE',

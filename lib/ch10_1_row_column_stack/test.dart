@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Test'),
         ),
-        body: SingleChildScrollView(
+        body: SingleChildScrollView(     // 스크롤 가능
           child: Column(
             children: [
               Container(

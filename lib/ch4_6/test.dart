@@ -1,9 +1,10 @@
 main () {
   int? no1 = 10;
 
-  no1 = null;
+  // no1 = null;
 
-  bool? result = no1?.isEven;
+  bool? result = no1?.isEven;   // no1 이 널 허용이므로 no1 값이 널 일수도 있으므로
+   print('result = $result');                 // bool 도 널 허용으로 해야 됨
 
   int? data3;
   data3 ??= 10;

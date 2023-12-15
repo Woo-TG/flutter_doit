@@ -1,5 +1,5 @@
 some(){
-  throw FormatException('my exception info');
+  throw FormatException('my exception info');  // 2.호출 받아서 던지기
 }
 
 main() {
@@ -9,14 +9,14 @@ main() {
   }
   try {
     print('step1...');
-    some();
-    print('step2...');
-  } on FormatException catch (e) {
+    some();             // 1.실행 --> some() 함수 호출
+    print('step2...');  // 실행 안됨
+  } on FormatException catch (e) {    // 3.실행 --> 처리할 예외의 종류 작성
     print('step3...$e');
-  } on Exception {
+  } on Exception {              // 실행 안됨
     print('step4...');
-  } finally {
+  } finally {           // 옵션이나 작성하면 무조건 실행됨
   print('step5...');
   }
-  print('step6...');
+  print('step6...');    // 모든 처리가 끝나면 마지막은 정상 실행
 }

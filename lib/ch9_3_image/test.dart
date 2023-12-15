@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
             const Image(
               image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
             ),
+            SizedBox(height: 20),
             Container(
               color: Colors.red,
               child: Image.asset('images/big.jpeg',

@@ -34,7 +34,79 @@ class _TestScreenState extends State<TestScreen> {
   
   @override
   Widget build(BuildContext context) {
-    return const Column();
+    return Column(
+      children: [
+        const Text('Checkbox Test'),
+        Row(
+          children: [
+            Checkbox(
+                value: isChecked,
+                onChanged: (bool? value) {
+                  setState(() {
+                    isChecked = value;
+                  });
+                },
+            ),
+            Text('checkbox value is $isChecked')
+          ],
+        ),
+        const SizedBox(height: 10),
+        const Text('Ridio Test'),
+        Row(
+          children: [
+            Radio(
+                value: 'android',
+                groupValue: selectPlatform,
+                onChanged: (String? value){
+                  setState(() {
+                    selectPlatform = value;
+                  });
+                }
+            ),
+            const Text('android')
+          ],
+        ),
+        Row(
+          children: [
+            Radio(
+                value: 'ios',
+                groupValue: selectPlatform,
+                onChanged: (String? value){
+                  setState(() {
+                    selectPlatform = value;
+                  });
+                }
+            ),
+            const Text('ios')
+          ],
+        ),
+        Text('selected platform is $selectPlatform'),
+        const SizedBox(height: 10),
+        const Text('Slider Test'),
+        Slider(
+            value: sliderValue,
+            min: 0,
+            max: 10,
+            onChanged: (double value) {
+              setState(() {
+                sliderValue = value;
+              });
+            }
+        ),
+        Text('slider value is $sliderValue'),
+        const SizedBox(height: 10),
+        const Text('Switch Test'),
+        Switch(
+            value: switchValue,
+            onChanged: (bool value) {
+              setState(() {
+                switchValue = value;
+              });
+            }
+        ),
+        Text('select value is $switchValue')
+      ],
+    );
   }
 }
 

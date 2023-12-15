@@ -1,7 +1,7 @@
 class SuperClass {
   String name;
   int age;
-  SuperClass(this.name, this.age){}
+  SuperClass(this.name, this.age){}  // 생성자
 }
 
 class SubClass extends SuperClass {

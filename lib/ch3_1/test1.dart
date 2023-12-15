@@ -2,7 +2,7 @@ int no1 = 10;
 int _no2 = 20;
 
 void sayHello1() {}
-void sayHello2() {}
+void _sayHello2() {}
 
 class User1 {
   String? name;

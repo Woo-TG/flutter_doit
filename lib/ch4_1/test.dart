@@ -11,6 +11,6 @@ main() {
   // double d2 = n1; // error
   // int n2 = d1;  // error
 
-  double d2 = n1.toDouble();
+  double d2 = n1.toDouble();  // 자동 형변환은 상하관계에서만 가능
   int n2 = d1.toInt();
 }

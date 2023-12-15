@@ -7,11 +7,11 @@ int multiply(int no) {
 }
 
 Function testFun(int argFun(int a)){
-  print('argFun : ${argFun(10)}');
+  print('argFun : ${argFun(20)}');
   return multiply;
 }
 
 main(){
   var result = testFun(plus);
-  print('result : ${result(20)}');
+  print('result : ${result(30)}');
 }
