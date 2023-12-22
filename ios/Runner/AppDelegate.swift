@@ -7,6 +7,9 @@ import Flutter
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
+
+    // 메세지 채널 테스트, 실제 작성 부분
+
     let controller: FlutterViewController =
         window?.rootViewController as! FlutterViewController
     let channel = FlutterBasicMessageChannel(

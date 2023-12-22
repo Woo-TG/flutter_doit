@@ -58,7 +58,7 @@ class _NativeCallWidgetState extends State<NativeCallWidget> {
               Text('resultMessage : $resultMessage'),
               Text('receiveMessage : $receiveMessage'),
               ElevatedButton(
-                  onPressed: (){
+                  onPressed: (){  // onPressed: nativeCall, 결과 동일
                     nativeCall();
                   },
                   child: Text('native call'),
